@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="gallery">
+
+  {% include filters.html %}
+
+  <div class="col-content">
+
+    <div class="col col-cards">
+      {% for post in site.tags.main %}
+        <article class="card">
+          <a href="{{ post.url }}">
+            {% include post-excerpt.html %}
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

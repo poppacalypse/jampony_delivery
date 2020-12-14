@@ -1,0 +1,60 @@
+---
+layout: classic
+---
+<div class="page-hero" style="background-image:url({{ page.hero }})">
+  <div class="page-title">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle }}</h2>
+  </div>
+
+  <div class="page-hero-bottom">
+    <div class="post-read-time">
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+      1 min read
+    {% else %}
+      {{ words | divided_by:180 }} mins read
+    {% endif %}
+    </div>
+
+    <div class="post-filters">
+      {% assign speed = site.data.moneys[page.speed] %}
+      <a href="{{ base.url }}{{ speed.path }}" alt="{{ speed.name }}" title="{{ speed.name }}"><span class="post-filter-icon">{{ speed.icon }}</span></a>
+
+      {% assign way = site.data.moneys[page.way] %}
+      <a href="{{ base.url }}{{ way.path }}" alt="{{ way.name }}" title="{{ way.name }}"><span class="post-filter-icon">{{ way.icon }}</span></a>
+
+      {% assign earning = site.data.moneys[page.earning] %}
+      <a href="{{ base.url }}{{ earning.path }}" alt="{{ earning.name }}" title="{{ earning.name }}"><span class="post-filter-icon">{{ earning.icon }}</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="post">
+
+
+
+  <article class="page">
+    <header class="post-header">
+      <div class="post-byline">
+          <span class="post-update">by</span> <span class="post-author"><a href="{{ page.authorTwitter }}" target="_blank"> {{ page.author }} <img src="{{ page.authorPic }}"></a>
+          </span>
+          <span class="post-update">
+          updated <time datetime="page.date">{{ page.date | date_to_long_string }}</time>
+          </span>
+      </div>
+    </header>
+
+    <aside class="post-aside-wrap">
+      {% include aside.html %}
+    </aside>
+
+    <main class="post-content">
+      {{ content }}
+    </main>
+
+    <footer class="post-footer">
+      {{ page.postFooter }}
+    </footer>
+  </article>
+</div>

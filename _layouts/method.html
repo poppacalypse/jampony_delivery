@@ -1,0 +1,12 @@
+---
+layout: gallery
+---
+<div class="col col-cards">
+  {% assign filtered_posts = site.tags.main | where: 'method', page.label %}
+
+  {% for post in filtered_posts %}
+    <div class="card">
+    <a href="{{ post.url }}">{% include post-excerpt.html %}</a>
+    </div>
+  {% endfor %}
+</div>

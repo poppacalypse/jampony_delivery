@@ -1,0 +1,14 @@
+<div class="col col-nav">
+    {% for method in site.methods %}
+    <ul class="filter-list">
+      <li>
+        <a href="{{ method.url }}">
+          <div class="filter-box">
+            <div class="filter-icon">{{ method.icon }}</div>
+            <div class="filter-name">{{ method.name }}</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    {% endfor %}
+</div>

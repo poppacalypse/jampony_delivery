@@ -1,0 +1,69 @@
+---
+layout: lander
+---
+
+<div class="full-hero hero-home">
+  <div class="hero-content">
+    <h1>Struggling to make extra coin on the side?</h1>
+    <h2>There are as many ways to
+      <br><a href="/make-money-online/">make money online</a>
+      <br>as there are
+      <br><a href="https://skyandtelescope.org/astronomy-resources/how-many-stars-night-sky-09172014/#:~:text=It%20tabulates%20every%20star%20visible,visible%20across%20the%20entire%20sky." target="_blank">stars in the sky</a>
+    </h2>
+  </div>
+</div>
+
+<main class="home-about">
+  <h1 class="about-title">Get ideas &amp; inspiration <br>today</h1>
+  <div class="about-copy">
+
+    <div style="margin-left: -30vw">
+      <div class="post-byline post-header">
+        <span class="post-author">
+          <a href="/about.html">
+            Hi, I'm Carl
+            <img src="/images/poppacalypse.jpg">
+        </a>
+        </span>
+      </div>
+    </div>
+
+    <p>
+      Each week I share a new experiment on how I earn pocket money online in <strong>my newsletter</strong>.
+    </p>
+
+    <ul>
+      <li>♾ &nbsp; Free tips. Forever.</li>
+      <li>💰 &nbsp; One method every week.</li>
+      <li>⚡️ &nbsp; Easy reads. Instantly actionable.</li>
+      <li>🎯 &nbsp; No fluff.</li>
+    </ul>
+
+    <p>
+      {% include newsletter-subs.html %} side-hustlers read it for money ha¢k$ and micro business ideas. Please join us!
+    </p>
+
+        <div class="footer-form">{% include signup-footer.html %}</div>
+
+
+
+    <p>
+      <br>&nbsp;
+      <br>⭐️ &nbsp; Try this week's hack at home:
+      {% for post in site.posts limit:1 %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {% assign words = post.content | number_of_words %}
+        <span style="font-size: 0.65rem; color: #00b490">
+        {% if words < 360 %}
+          1 MIN READ
+        {% else %}
+          {{ words | divided_by:180 }} MINS READ
+        {% endif %}
+      {% endfor %}
+      </span>
+    </p>
+  </div>
+</main>
+
+<!-- footer form -->
+<script src="//web.webformscr.com/apps/fc3/build/loader.js" sp-form-id="a129608a47f7ac6e38af4cde936bb48d7392ef1760fc470ea393571e1a504f95"></script>

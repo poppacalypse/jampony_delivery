@@ -1,0 +1,13 @@
+---
+layout: gallery
+title: Method Names
+---
+<h1>Method Names</h1>
+
+<ul>
+  {% for method in site.methods %}
+  <li>
+    <h2><a href="{{ method.url }}">{{ method.name}}</h2></a>
+  </li>
+  {% endfor %}
+</ul>

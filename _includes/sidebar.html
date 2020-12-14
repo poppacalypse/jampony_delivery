@@ -1,0 +1,57 @@
+<div class="col col-sidebar">
+
+  <div class="sidebar-content">
+    <p><strong>Newly updated</strong></p>
+      <ul>
+        {% for post in site.posts reversed limit:7 %}
+        <li><a href="{{ post.url }}">{{ post.title }} &gt;</a></li>
+        {% endfor %}
+      </ul>
+  </div>
+
+  <div class="sidebar-content">
+    <p><strong>Socials</strong></p>
+    <ul>
+      <li><a href="https://twitter.com/100ways_to" target="_blank">Twitter</a></li>
+      <li><a href="https://instagram.com/100ways_to" target="_blank">Instagram</a></li>
+      <li><a href="https://www.twitch.tv/poppacalypse" target="_blank">Twitch</a></li>
+    </ul>
+  </div>
+
+  <div class="sidebar-content">
+    <p><strong>Sponsorship</strong></p>
+    <ul>
+      <li><a href="https://www.buymeacoffee.com/carlpoppa" target="_blank">Future Cola <i class="fas fa-bolt"></i></a></li>
+      <li>Sitewide</li>
+    </ul>
+  </div>
+
+  <div class="sidebar-content">
+    <p><strong>Resources</strong></p>
+    <ul>
+      <li>Links</li>
+      <li>Archive</li>
+      <li>Projects</li>
+      <li>Colophon</li>
+    </ul>
+  </div>
+
+  <div class="sidebar-content">
+    <p><strong>Join {% include newsletter-subs.html %} HU$TLER$ in getting one actionable blueprint every week</strong>.
+      <br>&nbsp;
+    </p>
+
+      <ul>
+        <li><i><span class="icon icon-checkmark4"></span></i> Tested methods</li>
+        <li><i><span class="icon icon-checkmark4"></span></i> Practical hacks</li>
+        <li><i><span class="icon icon-checkmark4"></span></i> Quick reads</li>
+        <li><i><span class="icon icon-checkmark4"></span></i> Free, forever</li>
+      </ul>
+  </div>
+  <span class="sidebar-form">
+    {% include signup-sidebar.html %}
+  </span>
+</div>
+
+<!-- sidebar form -->
+<script src="//web.webformscr.com/apps/fc3/build/loader.js" sp-form-id="83e23668c3efed56785a506161de8e1dfcc0695efa27b49821571e72823765a4"></script>

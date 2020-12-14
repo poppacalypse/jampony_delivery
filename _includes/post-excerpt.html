@@ -1,0 +1,29 @@
+<div class="card-hero" style="background-image:url({{ post.hero }})">
+  <div class="card-title">
+    <h1>{{ post.title }}</h1>
+    <h2>{{ post.subtitle }}</h2>
+  </div>
+
+  <div class="card-hero-bottom">
+    <div class="card-read-time">
+    {% assign words = post.content | number_of_words %}
+    {% if words < 360 %}
+      1 min read
+    {% else %}
+      {{ words | divided_by:180 }} mins read
+    {% endif %}
+    </div>
+    <div class="card-filters">
+      {% assign speed = site.data.moneys[post.speed] %}
+      <span class="card-filter-icon">{{ speed.icon }}</span>
+
+      {% assign way = site.data.moneys[post.way] %}
+      <span class="card-filter-icon">{{ way.icon }}</span>
+
+      {% assign earning = site.data.moneys[post.earning] %}
+      <span class="card-filter-icon">{{ earning.icon }}</span>
+
+
+    </div>
+  </div>
+</div>

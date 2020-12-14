@@ -1,0 +1,29 @@
+collections:
+  methods:
+    output: true
+    permalink: /make-money-online/:path/
+    order:
+      - fast.md
+      - slow.md
+      - while-idling.md
+      - by-doing.md
+      - consuming-content.md
+      - creating-content.md
+      - mining-cryptocurrency.md
+      - making-investments.md
+      - with-small-earning-potential.md
+      - with-medium-earning-potential.md
+      - with-large-earning-potential.md
+      - on-adult-content.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "methods"
+    values:
+      layout: "method"
+
+plugins:
+  - jekyll-seo-tag
+
+include: [_redirects]
