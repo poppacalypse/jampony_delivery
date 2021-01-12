@@ -1,0 +1,93 @@
+/* DARK MODE STYLES  */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f9f9f9;
+  }
+  .header {
+  background-color: #f9f9f9;
+  }
+  .banner a {
+    border-bottom: 1px solid #ff00ff;
+  }
+  .banner a:hover,
+  .banner a:active {
+    border-bottom: 1px solid #ffff00;
+  }
+  a {
+    color: #00ff00;
+  }
+  code {
+    color: #ff00ff;
+  }
+  .filter-icon {
+    color: #00ff00;
+  }
+  .filter-name {
+    color: #00cc00;
+  }
+  .card-hero:hover,
+  .card-hero:active {
+    box-shadow: 0 0 10px #00ff00;
+  }
+  .page-hero {
+    border: 1px solid rgba(255, 255, 0, 0.25);
+  }
+  .post {
+    background-color: #0f001e;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+  }
+  .post-byline {
+    color: rgba(0, 255, 255, 0.5);
+  }
+  .post-filter-icon {
+    background: #05151e;
+    border: 1px solid #00ffff;
+  }
+  .post-content p {
+    color: #ccc;
+  }
+  .post-content h3 {
+    color: #00ffff;
+  }
+  .post-content h4 {
+    color: #ff00ff;
+  }
+  .post-content h5 {
+    color: #00ffff;
+  }
+  .post-content a:visited,
+  .post-footer a:visited {
+    color: #aaa;
+  }
+  .post-content a:hover,
+  .post-content a:active,
+  .post-footer a:hover,
+  .post-footer a:active {
+    background: rgba(0, 255, 0, 0.7);
+    color: #0f001e;
+  }
+  .post-content blockquote {
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.25);
+  }
+  .post-aside {
+    border: 1px solid #ff00ff;
+  }
+  .post-aside:hover,
+  .post-aside:active {
+    border: 1px solid #ffff00;
+  }
+  .sidebar-content {
+    color: #999;
+  }
+  .sidebar-content i {
+    color: #ff00ff;
+  }
+  .sidebar-content a:hover,
+  .sidebar-content a:active {
+    color: #00ff00;
+    background: rgba(0, 255, 0, 0.5);
+  }
+  .sidebar-form p {
+    color: #0f0 !important;
+  }
+}
