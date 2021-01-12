@@ -2,7 +2,7 @@
 layout: lander
 ---
 
-<div class="full-hero hero-home">
+<main class="full-hero hero-home">
   <div class="hero-content">
     <h1>Imagine a future</h1>
     <h2>where the power of decision is democratised
@@ -11,31 +11,46 @@ layout: lander
       <br>customers decide who you want to support
     </h2>
   </div>
-</div>
+</main>
 
-<main class="home-about">
-  <h1 class="about-title">Why?</h1>
-  <div class="about-copy">
-    <p>
-      How this came about. Why we built this.
-      Some strong points:
-    </p>
 
-    <ul>
-      <li>⚔️ &nbsp; Arm the rebels. Empower micro-businesses.</li>
-      <li>💖 &nbsp; Get to know the hearts under the hood.</li>
-      <li>⚖️ &nbsp; Raise awareness of unfair dynamics.</li>
-      <li>💰 &nbsp; Everyone saves money.</li>
-    </ul>
+  <div class="home-about">
+    <h1 class="about-title">Why?</h1>
+    <div class="about-copy">
+      <p>
+        How this came about. Why we built this.
+        Some strong points:
+      </p>
 
-    <p>
-      Short point form or tell a story? Or link to longer story - link to /about page? 
-    </p>
+      <ul>
+        <li>⚔️ &nbsp; Arm the rebels. Empower micro-businesses.</li>
+        <li>💖 &nbsp; Get to know the hearts under the hood.</li>
+        <li>⚖️ &nbsp; Raise awareness of unfair dynamics.</li>
+        <li>💰 &nbsp; Everyone saves money.</li>
+      </ul>
 
-    <p>
+      <p>
+        Short point form or tell a story? Or link to longer story - ie. link to separate About page?
+      </p>
+    </div>
+  </div>
+
+  <div class="home-cards">
+    <h3>Get to know the guts behind the goods</h3>
+    <div class="col col-cards">
+
+      {% for post in site.posts limit:3 %}
+        <div class="card">
+        <a href="{{ post.url }}">{% include post-excerpt.html %}</a>
+        </div>
+      {% endfor %}
+
+    </div>
+
+    <!--p>
       <br>&nbsp;
       <br>⭐️ &nbsp; Try this week's hack at home:
-      {% for post in site.posts limit:1 %}
+      {% for post in site.posts limit:3 %}
         <a href="{{ post.url }}">{{ post.title }}</a>
         {% assign words = post.content | number_of_words %}
         <span style="font-size: 0.65rem; color: #00b490">
@@ -46,6 +61,5 @@ layout: lander
         {% endif %}
       {% endfor %}
       </span>
-    </p>
+    </p-->
   </div>
-</main>

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Dropshipping
-permalink: /make-money-online/by-dropshipping/
-canonical_url: 'https://100ways.to/insert-canonical-url-here'
+title: Goldhill Hakka Restaurant 1997
+permalink: /make-money-online/goldhill-ytf/
 tags: main
-hero: /images/posts/dropshipping.jpg
+hero: /images/posts/goldhill_sample.jpg
 
 method:
 - slow

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mining cryptocurrency
-subtitle: using your web browser
-permalink: /make-money-online/cryptomining-with-your-web-browser/
+title: Fu You Yuan
+subtitle: Singapore's oldest Chinese vegetarian restaurant
+permalink: /make-money-online/fu-you-yuan/
 tags: main
-hero: /images/posts/cryptomining-browser.jpeg
+hero: /images/posts/fyy_sample.jpg
 
 method:
 - slow
