@@ -14,52 +14,48 @@ layout: lander
 </main>
 
 
-  <div class="home-about">
-    <h1 class="about-title">Why?</h1>
-    <div class="about-copy">
-      <p>
-        How this came about. Why we built this.
-        Some strong points:
-      </p>
+<div class="home-about">
+  <div class="about-title"><h1>Why?</h1></div>
+  <div class="about-copy">
+    <p>
+      How this came about. Why we built this.
+      Some strong points:
+    </p>
 
-      <ul>
-        <li>⚔️ &nbsp; Arm the rebels. Empower micro-businesses.</li>
-        <li>💖 &nbsp; Get to know the hearts under the hood.</li>
-        <li>⚖️ &nbsp; Raise awareness of unfair dynamics.</li>
-        <li>💰 &nbsp; Everyone saves money.</li>
-      </ul>
+    <ul>
+      <li>⚔️ &nbsp; Arm the rebels. Empower micro-businesses.</li>
+      <li>💖 &nbsp; Get to know the hearts under the hood.</li>
+      <li>⚖️ &nbsp; Raise awareness of unfair dynamics.</li>
+      <li>💰 &nbsp; Everyone saves money.</li>
+    </ul>
 
-      <p>
-        Short point form or tell a story? Or link to longer story - ie. link to separate About page?
-      </p>
+    <p>
+      Short point form or tell a story? Or link to longer story - ie. link to separate About page?
+    </p>
+  </div>
+</div>
+
+<div class="home-cards">
+  <h3>The guts behind the goods</h3>
+
+  <div class="col col-cards">
+    <div class="home-cards-col">
+    {% for post in site.posts limit:3 %}
+      <div class="card">
+      <a href="{{ post.url }}">{% include post-excerpt.html %}</a>
+      </div>
+    {% endfor %}
     </div>
   </div>
 
-  <div class="home-cards">
-    <h3>Get to know the guts behind the goods</h3>
-    <div class="col col-cards">
+  <p><a href="tk">Get to know more rebel merchants</a>
+  <br><span class="small">a little more intimately than you'd like</span>
+</p>
+</div>
 
-      {% for post in site.posts limit:3 %}
-        <div class="card">
-        <a href="{{ post.url }}">{% include post-excerpt.html %}</a>
-        </div>
-      {% endfor %}
-
-    </div>
-
-    <!--p>
-      <br>&nbsp;
-      <br>⭐️ &nbsp; Try this week's hack at home:
-      {% for post in site.posts limit:3 %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% assign words = post.content | number_of_words %}
-        <span style="font-size: 0.65rem; color: #00b490">
-        {% if words < 360 %}
-          1 MIN READ
-        {% else %}
-          {{ words | divided_by:180 }} MINS READ
-        {% endif %}
-      {% endfor %}
-      </span>
-    </p-->
-  </div>
+<div class="home-about about-bg">
+  <div class="home-customer">customer
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolores, aspernatur harum nemo, repudiandae fuga consectetur fugiat expedita, molestias corporis optio obcaecati quo mollitia asperiores sunt maiores rem, veritatis consequatur!</p></div>
+  <div class="home-merchant">merchant
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis est neque adipisci, quas excepturi dolorem illo! Quas quod consectetur amet, nemo dolores inventore eos officia iure neque aperiam. Autem, aut!</p></div>
+</div>
