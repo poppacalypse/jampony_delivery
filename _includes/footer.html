@@ -1,3 +1,44 @@
-<footer class="footer">
-hello footer
+<footer class="home-footer">
+  <div class="footer-links">
+    <ul>Artisan Stories
+      {% for post in site.posts offset:3 limit:5 %}
+        <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="footer-links">
+    <ul>For Small Biz
+      <li><a href="">&rarr; Register today &larr;</a></li>
+      <li><a href="">See demo shop</a></li>
+      <li><a href="">Tutorials</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">FAQ</a></li>
+    </ul>
+  </div>
+  <div class="footer-links">
+    <ul>About
+      <li><a href="">Calculator: How You'll $ave</a></li>
+      <li><a href="">Why We Built This</a></li>
+      <li><a href="">Our Tiny Team</a></li>
+      <li><a href="">Press Kit</a></li>
+    </ul>
+  </div>
+  <div class="footer-links">
+    <ul>Socials
+      <li><a href="">Instagram for Supporters</a></li>
+      <li><a href="">Instagram for Merchants</a></li>
+      <li><a href="">Facebook</a></li>
+      <li><a href="">Twitter</a></li>
+    </ul>
+  </div>
+</footer>
+
+<footer class="copyright">
+  <ul>Copyright &copy {{ site.time | date: '%Y' }} Jam Pony Delivery
+    <li><a href="">Privacy Policy</a></li>
+    <li><a href="">Terms of Use</a></li>
+  </ul>
+  <span>Have a question? &rarr; <a href="mailto:support@jampony.delivery">support@jampony.delivery</a></span>
 </footer>
