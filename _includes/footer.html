@@ -1,7 +1,8 @@
 <footer class="home-footer">
   <div class="footer-links">
     <ul>Artisan Stories
-      {% for post in site.posts offset:3 limit:5 %}
+      {% assign random_posts = site.posts | sample:5 %}
+        {% for post in random_posts %}
         <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         </li>

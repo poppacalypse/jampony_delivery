@@ -9,12 +9,14 @@ layout: lander
       Jam Pony is a brave, new delivery solution for small &amp micro business &ndash; we enable them to keep <strong><em>all</em></strong> their profits.</p>
       <!-- <p class="placeholder-square"></p> -->
     <div class="neon-sign">
-     <p>
-       <span>O</span>
-       <span>P</span>
-       <span>E</span>
-       <span>N</span>
-     </p>
+      <a href="link to all stories">
+       <p>
+         <span>O</span>
+         <span>P</span>
+         <span>E</span>
+         <span>N</span>
+       </p>
+      </a>
     </div>
   </div>
 </main>
@@ -47,17 +49,23 @@ layout: lander
 
   <div class="col col-cards">
     <div class="home-cards-col">
-    {% for post in site.posts limit:3 %}
-      <div class="card">
-      <a href="{{ post.url }}">{% include post-excerpt.html %}</a>
-      </div>
-    {% endfor %}
+      {% assign random_posts = site.posts | sample:3 %}
+        {% for post in random_posts %}
+        <div class="card">
+        <a href="{{ post.url }}">{% include post-excerpt.html %}</a>
+        </div>
+      {% endfor %}
     </div>
   </div>
 
   <div class="neon-sign neon-sign-vendors">
     <a href="link to stories page">
-    <p><span>Uncover more &#8605; </span></p>
+    <p>
+      <span>Uncover</span>
+      <span>&nbsp;</span>
+      <span>more</span>
+      <span>&#8605;</span>
+    </p>
     </a>
   </div>
 </section>

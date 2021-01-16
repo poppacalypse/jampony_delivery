@@ -9,7 +9,8 @@ layout: default
   <div class="col-content">
 
     <div class="col col-cards">
-      {% for post in site.tags.main %}
+      {% assign random_posts = site.tags.main | sample:100 %}
+      {% for post in random_posts %}
         <article class="card">
           <a href="{{ post.url }}">
             {% include post-excerpt.html %}
