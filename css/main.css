@@ -134,22 +134,29 @@ nav {
   z-index: 30;
 }
 .hero-content h1 {
-  /* color: rgba(241, 241, 241, 0.8); */
-  color: #003;
+  color: rgba(241, 241, 241, 0.8);
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.75));
   font-size: 4rem;
   font-weight: 800;
-  padding: 0 25vw;
+  padding: 0 15vw;
   text-shadow: 0 0 137px #93f;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.75));
-
 }
 .hero-content .subtitle {
-  /* background-color: rgba(0, 0, 51, 0.5); */
-  /* text-shadow: 0 0 5px #003; */
-  color: rgba(51, 255, 153, 0.75);
   font-size: 1.5rem;
   line-height: 2.125rem;
-  margin: 4vh 25vw;
+}
+.hero-content .subtitle-purple {
+  color: #93f;
+  margin: 6vh 30vw 0;
+}
+.hero-content .subtitle-grey {
+  color: #777;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+.hero-content .subtitle-green {
+  color: rgba(51, 255, 153, 0.75);
+  margin: 5vh 25vw;
 }
 .placeholder-square {
   width: 20vh;
@@ -157,13 +164,6 @@ nav {
   border: dashed 1px yellow;
   margin: 0 auto;
 }
-.hero-content .subtitle2 {
-  color: #93f;
-  font-size: 1.5rem;
-  line-height: 2.125rem;
-  margin: 4vh 30vw;
-}
-
 .full-hero:after {
   border: 0.625rem solid;
   border-color: #3f9 transparent transparent;
@@ -185,7 +185,7 @@ nav {
 .home-about {
   background-image: linear-gradient(140deg, rgba(24, 117, 222, .6) 10%, rgba(188, 1, 215, .6) 100%);
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 .home-about a {
@@ -205,13 +205,14 @@ nav {
   width: 200px;
 }
 .about-title {
-  color: #003;
+  color: rgba(241, 241, 241, 0.8);
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
+  padding-top: 3em;
 }
 .about-subtitle {
-  color: #93f;
+  color: #3f9;
   font-size: 1.75rem;
   line-height: 1.5em;
   padding: 1em 17vw;

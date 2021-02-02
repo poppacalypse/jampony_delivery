@@ -1,0 +1,30 @@
+I"ó<main class="full-hero">
+  <div class="hero-content">
+    <h1>We help restaurants keep <div class="neon-sign">
+      <a href="link to all stories">
+       <p>
+         <span>1</span>
+         <span>0</span>
+         <span>0</span>
+         <span>%</span>
+       </p>
+      </a>
+    </div> 100% of their profits</h1>
+    <p class="subtitle">
+      "OK cool but what has this got to do with me?" you ask.
+      <br />What if we say you'll end up saving money, too?
+    </p>
+      <!-- <p class="placeholder-square"></p> -->
+    <div class="neon-sign">
+      <a href="link to all stories">
+       <p>
+         <span>OK</span>
+         <span>I'm</span>
+         <span>liste</span>
+         <span>ning</span>
+       </p>
+      </a>
+    </div>
+  </div>
+</main>
+:ET
