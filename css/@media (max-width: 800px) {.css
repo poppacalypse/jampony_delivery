@@ -1,0 +1,129 @@
+@media (max-width: 800px) {
+  /* TEMP STYLES */
+  .neon-sign {
+    display: none;
+  }
+
+  /* MOBILE HEADER STYLES */
+  .header-logo {
+    /* display: flex; */
+    /* margin-left: 5.5vh; */
+    margin: 0;
+    height: 11vh;
+    /* align-items: center; */
+  }
+  .header-logo-img img {
+    height: 7vh;
+    width: 100%;
+    float: left;
+  }
+
+  /* MOBILE HERO STYLES */
+
+  /* MOBILE FOOTER STYLES */
+  .footer-nav > li {
+    margin: 0;
+    padding-top: 1em;
+  }
+
+  /* MOBILE COLUMN STYLES */
+  .col {
+    padding: 0;
+  }
+
+  /* MOBILE REPORT PAGE STYLES */
+  .page {
+    width: auto;
+  }
+  .post-aside {
+    float: none;
+    margin: 0 2em 2em;
+  }
+  .pull-left,
+  .pull-right {
+    float: none;
+    margin: 1em 0;
+  }
+  .post-content img {
+    width: 100%;
+  }
+
+  /* MOBILE SOCIAL STYLES */
+
+  /* MOBILE MENU */
+  .show-mobile-menu {
+    display: block;
+    position: relative;
+    padding: 1.5em;
+    margin-top: 1.5vh;
+    text-transform: uppercase;
+  }
+  .header-nav {
+    background: linear-gradient(95deg, #000060, #8105a0);
+    box-sizing: border-box;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 11vh;
+    transition: all 0.1s ease-in-out;
+    width: 100vw;
+    z-index: 9;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    height: 69vh;
+  }
+  .mobile-menu-check:checked ~ .show-mobile-menu:after {
+    background-color: #003;
+    color: #0ff;
+    content: "[x] CLOSE";
+    right: 0;
+    position: absolute;
+    text-align: center;
+    top: 1.5em;
+    width: 100%;
+  }
+  .header-nav-links {
+    width: 100%;
+  }
+  .header-nav-links > ul > li {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0.375rem 3rem;
+    background: red;
+    text-align: left;
+  }
+  .header-nav-links ul {
+    display: block;
+  }
+  /* MOBILE LANDING PAGE STYLES */
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    flex: 1;
+  }
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  /* MOBILE BIO STYLES */
+
+  /* MOBILE BLOG INDEX STYLES */
+  .col-two {
+    flex-direction: column;
+  }
+  .col-two .col-aside {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .blog-posts {
+    margin-top: 1em;
+  }
+}

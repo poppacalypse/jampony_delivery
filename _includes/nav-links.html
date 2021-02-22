@@ -1,18 +1,15 @@
-<div class="header-social-links">
+<div class="header-nav-links">
   <ul>
-    <li>Uncover</li>
-    <li>Testimonials</li>
-    <li>Demo</li>
-    <li>
-      <a href="https://instagram.com/jampony.hustle" target="_blank">
-        <span class="icon icon-instagram1"></span
-      ></a>
+    <li class="dropdown">
+      <a class="drop-trigger" href="stories">Uncover </a>
+      <ul class="drop-menu">
+        <li>Latest Stories</li>
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
     </li>
-    <li>
-      <a href="https://twitter.com/jampony_dlvry" target="_blank">
-        <span class="icon icon-twitter1"></span
-      ></a>
-    </li>
-    <li>fb</li>
+    <li><a href="tk">Demo</a></li>
+    <li><a href="tk">Testimonials</a></li>
   </ul>
 </div>

@@ -1,6 +1,6 @@
-I"S<main class="full-hero">
-  <div class="hero-content">
-    <h1>We Help Small Food Biz Keep</h1>
+I"o<main class="hero-content">
+  <div class="hero-title">
+    <h1>We Help Small Restaurants and Micro Businesses Keep</h1>
     <div class="neon-sign">
       <a href="stories">
         <p>
@@ -12,5 +12,6 @@
       </a>
     </div>
     <h1>of Their Profits</h1>
-</div></main>
+  </div>
+</main>
 :ET

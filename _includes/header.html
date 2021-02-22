@@ -1,19 +1,36 @@
 <header class="header">
+  <div class="header-logo">
+    <a href="/"
+      ><img
+        src="/images/logo/jampony_logo.png"
+        alt="Jam Pony Delivery"
+        title="Home"
+    /></a>
+  </div>
 
   <nav>
+    <div class="header-nav-links">{% include nav-links.html %}</div>
+
+    <div class="header-social-links">{% include social-links.html %}</div>
+  </nav>
+</header>
+
+<!-- <header class="header">
+  <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check" />
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
 
     <div class="header-logo">
-
       <div class="header-logo-img">
-        <a href="/"><img src="/images/logo/jampony_logo.png" alt="Jam Pony Delivery" title="Home"></a>
+        <a href="/"
+          ><img
+            src="/images/logo/jampony_logo.png"
+            alt="Jam Pony Delivery"
+            title="Home"
+        /></a>
       </div>
-
     </div>
 
-    <div class="header-nav">
-      {% include nav-links.html %}
-    </div>
-
+    <div class="header-nav">{% include nav-links.html %}</div>
   </nav>
-
-</header>
+</header> -->

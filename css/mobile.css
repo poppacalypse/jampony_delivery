@@ -1,0 +1,60 @@
+@media (max-width: 800px) {
+  /* HEADER STYLES - MOBILE */
+  .header {
+    padding: 1.25rem;
+  }
+  .header-logo {
+    margin-left: 0;
+    align-items: left;
+  }
+  .header-logo-img img {
+    height: 5vh;
+  }
+  nav {
+    display: none;
+  }
+
+  /* HERO STYLES - MOBILE */
+  .hero-content h1 {
+    font-size: 1.875rem;
+    line-height: 1.15em;
+    padding: 0 5vw;
+  }
+  .hero-subtitle {
+    flex-wrap: wrap;
+    border: 1px solid transparent;
+  }
+  .hero-subtitle p {
+    font-size: 1.375rem;
+  }
+  .hero-subtitle > .svg {
+    flex-grow: 1;
+  }
+  .hero-subtitle .subtitle {
+    margin-bottom: 5vh;
+    flex-grow: 1;
+    order: 1;
+  }
+  .hero-subtitle .objection {
+    font-size: 0.85em;
+    margin: 1em;
+  }
+  .btn-order {
+    padding: 0.75em 1rem;
+    width: 85vw;
+  }
+
+  /* NEON SIGN STYLES - MOBILE */
+  .neon-sign {
+    border-radius: 0.8rem;
+    margin: 0 30vw;
+  }
+  .neon-sign span {
+    font-size: 1.875rem;
+  }
+
+  /* HOME CARDS STYLES - MOBILE */
+  .home-cards {
+    display: none;
+  }
+}
