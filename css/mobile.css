@@ -11,10 +11,19 @@
     height: 5vh;
   }
   nav {
-    display: none;
+    /* display: none; */
   }
 
   /* HERO STYLES - MOBILE */
+  .hero-temp > img {
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .hero-temp p {
+    font-size: 0.8rem;
+  }
   .hero-content h1 {
     font-size: 1.875rem;
     line-height: 1.15em;

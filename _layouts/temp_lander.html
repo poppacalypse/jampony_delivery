@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header-logo">
+        <a href="/"
+          ><img
+            src="/images/logo/jampony_logo.png"
+            alt="Jam Pony Delivery"
+            title="Home"
+        /></a>
+      </div>
+    
+      <nav>
+        <div class="header-social-links">{% include social-links.html %}</div>
+      </nav>
+    </header>
+
+    <div class="content-container">
+      {{ content }}
+    </div>
+
+  </body>
+</html>
