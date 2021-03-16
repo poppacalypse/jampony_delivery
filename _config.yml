@@ -1,21 +1,20 @@
 collections:
   methods:
     output: true
-    permalink: /make-money-online/:path/
+    permalink: /stories/:path/
     order:
-      - fast.md
-      - slow.md
-      - while-idling.md
-      - by-doing.md
-      - consuming-content.md
-      - creating-content.md
-      - mining-cryptocurrency.md
-      - making-investments.md
-      - with-small-earning-potential.md
-      - with-medium-earning-potential.md
-      - with-large-earning-potential.md
-      - on-adult-content.md
-
+      - northwest.md
+      - northeast.md
+      - southwest.md
+      - southeast.md
+      - central.md
+      - restaurant.md
+      - hawker.md
+      - home-based-business.md
+      - halal.md
+      - vegetarian.md
+      - international.md
+      - bakery.md
 defaults:
   - scope:
       path: ""
