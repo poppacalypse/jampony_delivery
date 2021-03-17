@@ -1,0 +1,59 @@
+northwest:
+    name: North West
+    path: /stories/northwest/
+    icon: <span class="icon-arrow-up-left21"></span>
+
+northeast:
+    name: North East
+    path: /stories/northeast/
+    icon: <span class="icon-arrow-up-right21"></span>
+
+southwest:
+  name: South West
+  path: /stories/southwest/
+  icon: <span class="icon-arrow-down-left21"></span>
+
+southeast:
+  name: South East
+  path: /stories/southeast/
+  icon: <span class="icon-arrow-down-right21"></span>
+
+central:
+  name: Central
+  path: /stories/central/
+  icon: <span class="icon-gps_not_fixed"></span> 
+
+restaurant:
+  name: Restaurant
+  path: /stories/restaurant/
+  icon: <span class="icon-shop"></span>
+
+hawker:
+  name: Hawker
+  path: /stories/hawker/
+  icon: <span class="icon-food5"></span> 
+
+hbb:
+  name: Home-Based Business
+  path: /stories/home-based-business/
+  icon: <span class="icon-home-outline"></span>
+
+halal:
+  name: Halal
+  path: /stories/halal/
+  icon: <span class="icon-moon-and-star"></span>
+
+vegetarian:
+  name: Vegetarian
+  path: /stories/vegetarian/
+  icon: <span class="icon-leaf"></span>
+
+international:
+  name: International
+  path: /stories/international/
+  icon: <span class="icon-earth2"></span> 
+  
+bakery:
+  name: Bakery
+  path: /stories/bakery/
+  icon: <span class="icon-bakery_dining"></span>

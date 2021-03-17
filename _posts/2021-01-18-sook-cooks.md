@@ -1,23 +1,26 @@
 ---
 layout: post
-title: Goldhill Hakka Restaurant 1997
-permalink: /make-money-online/goldhill-ytf/
+title: Home Hummus
+permalink: /stories/home-hummus/
 tags: main
-hero: /images/posts/goldhill_sample.jpg
+hero: /images/posts/sookcooks.jpeg
+order: https://sookcooks.jampony.delivery
 
 method:
-- slow
-- creating
-- large
-speed: slow
-way: creating
-earning: large
+- northeast
+- hbb
+- bakery
+region: northeast
+business: hbb
+food: bakery
 
 author: Carl Poppa
 authorTwitter: https://twitter.com/poppacalypse
-authorPic: /images/poppacalypse.jpg
+authorPic: /images/posts/carlpoppa.jpeg
 postFooter: Test footer note, with  <a href="#">test footer link</a>.<p>Next paragraph. Front matter cannot have spaces, but can include HTML elements like `p` to create paragraphs.</p>
 ---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus rerum ullam inventore, soluta perferendis esse eaque tempore fugit consequuntur. Fugiat, vitae harum? Cupiditate voluptatem officia iste error debitis, sit modi!
 
 Front matter for this page includes canonical_url.
 

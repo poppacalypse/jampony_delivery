@@ -8,31 +8,35 @@ layout: classic
   </div>
 
   <div class="page-hero-bottom">
-    <div class="post-read-time">
-    {% assign words = content | number_of_words %}
-    {% if words < 360 %}
-      1 min read
-    {% else %}
-      {{ words | divided_by:180 }} mins read
-    {% endif %}
+    <div class="post-filters">
+      {% assign region = site.data.categories[page.region] %}
+      <a href="{{ base.url }}{{ region.path }}" alt="{{ region.name }}" title="{{ region.name }}"><span class="post-filter-icon">{{ region.icon }}</span></a>
+
+      {% assign business = site.data.categories[page.business] %}
+      <a href="{{ base.url }}{{ business.path }}" alt="{{ business.name }}" title="{{ business.name }}"><span class="post-filter-icon">{{ business.icon }}</span></a>
+
+      {% assign food = site.data.categories[page.food] %}
+      {% if food %}  
+        <a href="{{ base.url }}{{ food.path }}" alt="{{ food.name }}" title="{{ food.name }}"><span class="post-filter-icon">{{ food.icon }}</span></a>
+      {% endif %}
     </div>
 
-    <div class="post-filters">
-      {% assign speed = site.data.moneys[page.speed] %}
-      <a href="{{ base.url }}{{ speed.path }}" alt="{{ speed.name }}" title="{{ speed.name }}"><span class="post-filter-icon">{{ speed.icon }}</span></a>
+    <div class="order-directly">
+      <a href="{{ page.order }}"><button class="post-btn-order">Order directly!</button></a>
+    </div>
 
-      {% assign way = site.data.moneys[page.way] %}
-      <a href="{{ base.url }}{{ way.path }}" alt="{{ way.name }}" title="{{ way.name }}"><span class="post-filter-icon">{{ way.icon }}</span></a>
-
-      {% assign earning = site.data.moneys[page.earning] %}
-      <a href="{{ base.url }}{{ earning.path }}" alt="{{ earning.name }}" title="{{ earning.name }}"><span class="post-filter-icon">{{ earning.icon }}</span></a>
+    <div class="post-read-time">
+      {% assign words = content | number_of_words %}
+      {% if words < 360 %}
+        1 min read
+      {% else %}
+        {{ words | divided_by:180 }} mins read
+      {% endif %}
     </div>
   </div>
 </div>
 
 <div class="post">
-
-
 
   <article class="page">
     <header class="post-header">
