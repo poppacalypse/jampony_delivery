@@ -1,0 +1,114 @@
+---
+layout: lander
+---
+<main class="hero-content">
+
+  <h1>Commissions Free 
+    <br>Online Ordering System 
+    <br>For <span class="typing-text"></span>
+  </h1>
+
+  <div class="subtitle">
+    <p>Jam Pony helps you <strong>automate and scale</strong> your online orders. 
+      <br>Regain full control of your revenue and reputation &ndash; with our integrated delivery solution, payment processing and more.</p>
+  </div>
+
+  <div class="key-visuals-wrapper">
+    <div class="visual ipad"><img src="/images/site/ipad.png" alt=""></div>
+    <div class="visual macbook"><img src="/images/site/macbook.png" alt=""></div>
+    <div class="visual iphone"><img src="/images/site/iphone.png" alt=""></div>
+  </div>
+
+  <div class="cta">
+    <a href="request-demo">
+      <button class="btn-large">Request Free Demo</button>
+    </a>
+  </div>
+
+  <div class="under-cta-checkmarks">
+    <span><em>✓</em> <strong>Direct customer contact</strong></span>
+    <span><em>✓</em> <strong>Easy-to-use admin</strong></span>  
+    <span><em>✓</em> <strong>No contracts</strong></span>     
+  </div>
+
+</main>
+
+{% include footer.html %}
+
+<!-- TYPING TEXT JS  -->
+<script>
+  // get the element
+const text = document.querySelector('.typing-text');
+
+// make a words array
+const words = [
+  "Cafés",
+  "Restaurants",
+  "Hawkers",
+  "Instagram Shops",
+  "Home Bakers",
+  "Florists",
+  "You"
+];
+
+// start typing effect
+setTyper(text, words);
+
+function setTyper(element, words) {
+
+  const LETTER_TYPE_DELAY = 50;
+  const WORD_STAY_DELAY = 700;
+
+  const DIRECTION_FORWARDS = 0;
+  const DIRECTION_BACKWARDS = 1;
+
+  var direction = DIRECTION_FORWARDS;
+  var wordIndex = 0;
+  var letterIndex = 0;
+
+  var wordTypeInterval;
+
+  startTyping();
+
+  function startTyping() {
+    wordTypeInterval = setInterval(typeLetter, LETTER_TYPE_DELAY);
+  }
+
+  function typeLetter() {
+    const word = words[wordIndex];
+
+    if (direction == DIRECTION_FORWARDS) {
+      letterIndex++;
+
+      if (letterIndex == word.length) {
+        direction = DIRECTION_BACKWARDS;
+        clearInterval(wordTypeInterval);
+        setTimeout(startTyping, WORD_STAY_DELAY);
+      }
+
+    } else if (direction == DIRECTION_BACKWARDS) {
+      letterIndex--;
+
+      if (letterIndex == 0) {
+        nextWord();
+      }
+    }
+
+    const textToType = word.substring(0, letterIndex);
+
+    element.textContent = textToType;
+  }
+
+  function nextWord() {
+
+    letterIndex = 0;
+    direction = DIRECTION_FORWARDS;
+    wordIndex++;
+
+    if (wordIndex == words.length) {
+      wordIndex = 0;
+    }
+
+  }
+}
+</script>
