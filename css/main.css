@@ -352,7 +352,9 @@ h1 {
   transform: scaleX(-1);
 }
 .fyy {
-  border-radius: 99px;
+  border-radius: 99em;
+  padding: 0.5em;
+  box-sizing: border-box;
 }
 .about-title {
   color: rgba(241, 241, 241, 0.8);
