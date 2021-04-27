@@ -198,23 +198,30 @@ h1 {
 }
 .key-visuals-wrapper {
   display: flex;
-}
-.visual {
-  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 5em 0;
+
 }
 .visual img {
   width: 100%;
 }
 .ipad {
-  width: 50%;
-  margin-right: -15vw;
+  width: 30%;
 }
 .macbook {
-  width: 70%;
+  width: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 .iphone {
-  margin-left: -15vw;
-  width: 50%;
+  width: 19%;
+  z-index: 1;
+  margin-right: 7vw;
+  
 }
 .btn-large {
   background-color: #3f9;
@@ -318,30 +325,34 @@ h1 {
 }
 .restaurant-name {
   text-transform: uppercase;
-  letter-spacing: .125rem;
   font-size: 0.7rem;
   font-weight: 700;
-  padding-bottom: 1.875rem;
+  padding-bottom: 0.5rem;
   color: #8e8e93;
-  margin-top: 0.7em;
+  opacity: 0.5;
 }
 .veterans-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 70%;
 }
 .veteran {
   width: 30%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1em;
-  border-radius: 0.6em;
 }
-.veteran img {
-  width: 100%;
+.veteran-logo {
+  display: flex;
+  align-items: center;
+}
+.veteran-logo img {
+  width: 70%;
+  height: 70%;
+}
+.laurel-right {
+  transform: scaleX(-1);
+}
+.fyy {
+  border-radius: 99px;
 }
 .about-title {
   color: rgba(241, 241, 241, 0.8);
@@ -1126,46 +1137,4 @@ svg path {
 
 .topSVG-tiltDownLeft {
   transform: rotateY(180deg);
-}
-
-/* LAURELS STYLES */
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
-.header-promo {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-flow: row no-wrap;
-  position: relative;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.header-promo .textwidget {
-  width: 80%;
-}
-.header-promo .laurel-left, .header-promo .laurel-right {
-  width: 20%;
-}
-.header-promo .laurel-left svg, .header-promo .laurel-right svg {
-  position: relative;
-}
-.header-promo .laurel-left svg path, .header-promo .laurel-right svg path {
-  fill: #8e8e93;
-}
-.header-promo .laurel-left {
-  justify-content: right;
-}
-.header-promo .laurel-left svg {
-  float: right;
-}
-.header-promo .laurel-right {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 }
