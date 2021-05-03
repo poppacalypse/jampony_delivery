@@ -384,13 +384,13 @@ h1 {
 }
 
 /* FEATURES STYLES */
-.merchants-or-customers {
+.merchants-or-affiliates {
   padding: 3rem 1.5rem 0;
 }
 .merchants {
   background: #edf2f7;
 }
-.customers {
+.affiliates {
   background: #0a2540;
 }
 .container {
@@ -444,14 +444,9 @@ h1 {
   margin-left: -10vw;
   width: 100%;
 }
-/* .shape {
-  display: block;
-  position: relative;
-  -webkit-transform: skew(20deg);
-  transform: skew(20deg);
-  background: yellow;
-} */
-
+.benefits .btn-large {
+  background-color: #fff;
+}
 .line {
   height: 1px;
   background: #003;

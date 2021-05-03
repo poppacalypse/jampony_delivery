@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="columns">
+    <div class="column">
+      <p class="pre-title">For Shop Owners</p>
+      <h2><a href="/partners/merchant-benefits/">One Menu for<br>Everything</a></h2>
+      <p class="subtitle">Get your own website + a simple backend sytem to manage your online orders. No installations or new hardware needed &mdash; use your existing devices to monitor new orders anytime, anywhere.</p>
+
+      {% if page.title contains 'For Shop Owners' %}
+        {% include cta-primary.html %}
+      {% else %}
+        {% include cta-secondary.html %}
+      {% endif %}
+    </div>
+
+    <div class="column">
+      <div class="visual">
+        <img class="with-visual" src="/images/site/one_menu.png" alt="">
+        <h4><span class="arrow">&mdash;&mdash;</span> Delivery <span class="arrow">✓</span></h4>
+        <p> Accept delivery orders with Jam Pony-managed rider integrations</p>
+        <h4><span class="arrow">&mdash;&mdash;</span> Self-pickup <span class="arrow">✓</span></h4>
+        <p>Make self-pickups cashless and fuss-free</p>
+        <h4><span class="arrow">&mdash;&mdash;</span> Advance orders <span class="arrow">✓</span></h4>
+        <p>Allow your customers to pre-order hours, days, or even weeks in advance</p>
+        <h4><span class="arrow">&mdash;&mdash;</span> Dine-in <span class="arrow">✓</span></h4>
+        <p>Let diners place orders via table QR code, shop QR code, or your shop's web link</p>
+        </div>
+      
+    </div>
+  </div>
+</div>
